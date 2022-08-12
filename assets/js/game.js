@@ -17,7 +17,7 @@ var playerMoney=10;
 //you can also log multiple values at once like this
 console.log(playerName, playerAttack, playerHealth);
 var enemyNames= ["Roborto","Amy Android", "Robo Trumble"]; 
-var enemyHealth= 50;
+var enemyHealth= randomNumber(40,60);
 var enemyAttack=12;
 for(var i=0; i < enemyNames.length; i++ ){
     console.log(enemyNames[i]);
@@ -91,7 +91,11 @@ else {
     
 }
 
-
+//function to generate a random numeric value
+var randomNumber = function(min,max) {
+    var value = math.floor(math.random () * (max - min +1) =min);
+    return value;
+};
 //execute function 
 //repeat and execute as long as the enemy-robot is alive
 var fight=function(enemyName){
